@@ -30,7 +30,7 @@ const WordinHome: FC = () => {
       );
       setWordMeanings(response.data[0].meanings);
       setMessage("");
-    } catch (error: Error | AxiosError) {
+    } catch (error: any) {
       if (axios.isAxiosError(error)) {
         setMessage(error.response?.data.title);
       } else {

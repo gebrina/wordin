@@ -1,0 +1,22 @@
+.advice-wrapper {
+  width: 50%;
+  margin: auto;
+  padding: 10px 20px;
+  color: var(--text-color);
+  border-left: 3px solid var(--main-color);
+  border-radius: 20px;
+}
+.advice-wrapper h3 {
+  color: orangered;
+  font-size: var(--title-font-size);
+  border-right: 2px solid green;
+  width: max-content;
+}
+
+@media (max-width: 500px) {
+  .advice-wrapper {
+    width: 90%;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}

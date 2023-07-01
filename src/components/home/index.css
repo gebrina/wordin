@@ -1,0 +1,72 @@
+.word-wrapper {
+  margin: 50px auto;
+  font-family: var(--paragraph-font);
+}
+
+.word-wrapper form {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.word-wrapper form > * {
+  height: 30px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  color: var(--text-color);
+}
+.word-wrapper form input {
+  box-shadow: 0.3px 0.3px 3px 0.5px var(--main-color);
+}
+
+.word-wrapper form button {
+  height: 40px;
+  box-shadow: 0.3px 0.3px 0.3px 0.5px var(--main-color);
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.word-wrapper form button:hover {
+  background-color: var(--main-color);
+}
+.definitions-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 50%;
+  place-content: center;
+  margin: 50px auto;
+}
+.definitions-wrapper > * {
+  padding: 0px 10px;
+  width: 100%;
+  height: max-content;
+  font-size: 1.2rem;
+  box-shadow: 0.3px 0.3px 3px var(--main-color);
+}
+
+.definitions-wrapper .part-of-speech {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.definitions-wrapper .part-of-speech span {
+  background-color: var(--main-color);
+  padding: 0 20px;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.word-wrapper .message {
+  text-align: center;
+  margin-top: -50px;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+@media (max-width: 500px) {
+  .definitions-wrapper {
+    width: 90%;
+  }
+}

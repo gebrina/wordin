@@ -1,0 +1,3 @@
+# Wordin
+## Vite + React engilsh dictionary app.
+## Wording=> gives you the definition of the word you want...

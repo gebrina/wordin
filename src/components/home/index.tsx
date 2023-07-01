@@ -1,6 +1,5 @@
 import { ChangeEvent, FC, useState } from "react";
 import axios, { AxiosError } from "axios";
-import { Rings } from "react-loader-spinner";
 
 import "./index.css";
 
@@ -10,10 +9,12 @@ type Definitions = {
   antonyms: string[];
   example: string;
 };
+
 type Meanings = {
   partOfSpeech: string;
   definitions: Definitions[];
 };
+
 const WordinHome: FC = () => {
   const [requestedWord, setRequestedWord] = useState<string>("");
   const [message, setMessage] = useState<string>("");

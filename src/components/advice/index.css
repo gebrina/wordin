@@ -5,10 +5,11 @@
   color: var(--text-color);
   border-left: 3px solid var(--main-color);
   border-radius: 20px;
+  font-size: var(--title-font-size);
 }
+
 .advice-wrapper h3 {
   color: orangered;
-  font-size: var(--title-font-size);
   border-right: 2px solid green;
   width: max-content;
 }
